@@ -5,15 +5,15 @@ for i in arr:
     s += str(i)
 
 minim = 10e5
-tail = ''
-answer = ''
+tail = '' # to count tail
+answer = '' # UPD answer
 for i in range(len(s)):
-    new_s = s + s[0:i][::-1]
+    new_s = s + s[0:i][::-1] # reverse and contacenate
     if new_s == new_s[::-1]:
         if len(s[0:i][::-1]) < minim:
             minim = len(s[0:i][::-1])
             tail = s[0:i][::-1]
-if len(s) == 1 or s == s[::-1]:
+if len(s) == 1 or s == s[::-1]: # stress-test & base cases
     print(0)
 else:
     print(minim)
