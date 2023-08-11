@@ -6,8 +6,10 @@ s = s.split(' ')
 countDict = dict()
 for word in s:
     if word in countDict.keys():
-        countDict[word] += 1
+        if word !='':
+            countDict[word] += 1
     else:
-        countDict[word] = 1
-
-    print(countDict[word] -1, end= ' ')
+        if word != '':
+            countDict[word] = 1
+    if word != '':
+        print(countDict[word] -1, end= ' ')
