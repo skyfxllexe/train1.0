@@ -14,8 +14,3 @@ for i in set1:
 print(count)
 
 
-'''
-4 11
-cAda
-AbrAcadAbRa
-'''
