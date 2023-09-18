@@ -6,3 +6,6 @@ def makeprefixsum(nums):
 
 def rsq(prefixsum, l, r):
     return prefixsum[r] - prefixsum[l]
+
+nums = [1, 2,3,4,-3,-1,0,2,-2]
+print(makeprefixsum(nums))
